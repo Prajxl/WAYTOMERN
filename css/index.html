@@ -107,8 +107,28 @@
         <p class="element__subtitle">
           Fill out the form below to sign up for our newsletter and recieve update
         </p>
-        <form class="element__from">
-          <h3>YOur Interests :</h3>
+        <form class="element__form">
+          <h3>Your Interests :</h3>
+          <ul class="element__list">
+            <li class="element__list--item">Web Development</li>
+            <li class="element__list--item">UI & UX Design</li>
+            <li class="element__list--item">Digital Marketing</li>
+          </ul>
+
+          <div class="element__form--group">
+            <label for="username">username:</label>
+            <input type="text" id="username" placeholder="Enter username">
+          </div>
+          <div class="element__form--group">
+            <label for="course">Select Course:</label>
+            <select  id="course">
+              <option value="">Choose Course</option>
+              <option value="html">HTML  & CSS</option>
+              <option value="React">React js</option>
+              <option value="Js">Java Script</option>
+            </select>
+          </div>
+          <button type="submit" class="element__button">Submit</button>
         </form>
       </div>
     </section>
