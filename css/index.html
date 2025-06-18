@@ -4,44 +4,17 @@
      <link rel="stylesheet" href="style.css">
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-    </div>
-  </div>
-</nav>
-    
+  <body> 
+    <nav class="nav">
+        <div class="nav__logo">
+          <img src="images/logo.png" alt="Logo">
+        </div>
+        <div class="nav__links">
+            <a href="" class="nav__link">Home</a>
+            <a href="" class="nav__link">About</a>
+            <a href="" class="nav__link">Contact</a>
+        </div>
+      </nav>
     <!-- 1-Selectors Section -->
     <header class="hero">
       
@@ -70,6 +43,10 @@
           <p class="feature__description">Empowering students is essential in creating a strong sense of ownership throughout their educational journey. When students feel empowered, they are more motivated and engaged in the learning process. They become very engaged in their education</p>
         </div>
       </div>
+
+      <div class="feature__container-image">
+        <img src="images/features.jpg" alt="Featured Image" class="feature__image">
+      </div>
     </section>
     <!-- 3- Colors Section  -->
      <section class="cta">
@@ -89,18 +66,34 @@
         <div class="video__container"></div>
       </section>
       <!-- 5 Flex Box - Programs Section -->
+
        <section class="programs">
-        <h2>Practice Flex Box Section</h2>
+        <h2>Explore our state-of-Art</h2>
         <div class="programs__cards">
-          <div class="programs__card"></div>
-          <div class="programs__card"></div>
-          <div class="programs__card"></div>
+          <div class="programs__card">
+            <img src="images/program1.jpg" alt="Program Images" class="programs__card-img">
+            <h3>Extra curricular Activites for Holistic Student Development</h3>
+            <p>Our school offers modern facilitates designed to enhance lerning experience</p>
+            <button class="programs_button">Learn More</button>
+          </div>
+          <div class="programs__card">
+            <img src="images/program2.jpg" alt="Program Images" class="programs__card-img">
+            <h3>Diverse Academic Programs Tailored to Student Interests</h3>
+            <p class="">We Provide a wide range  of academic programs to enhance students skills</p>
+            <button class="programs_button">Learn More</button>
+          </div>
+          <div class="programs__card">
+            <img src="images/program3.jpg" alt="Program Images" class="programs__card-img">
+            <h3>Dedicated Staff Commited to Student Success and Growth</h3>
+            <p>Our experienced educators are passionate about nuturing each students potential</p>
+            <button class="programs_button">Learn More</button>
+          </div>
         </div>
        </section>
 <!-- 6 - HTML ELEMENTS & IMAGES - FORM SECTION -->
     <section class="element">
       <div class="element__left">
-        <div class="element__placeholder"></div>
+        <img src="images/features.jpg" alt="LOading The Element Image" class="element__left--image">
       </div>
       <div class="element__right">
         <h2>Sign Up Today Now!</h2>
@@ -132,5 +125,46 @@
         </form>
       </div>
     </section>
+
+
+    <footer class="footer">
+      <div class="footer__content">
+        <div class="footer__logo">
+          <img src="images/logo.png" alt="Logo" />
+          <p>
+            Empowering the next generation of learners with innovative
+            educational solutions.
+          </p>
+          <button class="footer__button">Learn More</button>
+        </div>
+        <div class="footer__links">
+          <div class="footer__column">
+            <h4>Quick Links</h4>
+            <a href="#">About Us</a>
+            <a href="#">Features</a>
+            <a href="#">Programs</a>
+            <a href="#">Blog</a>
+          </div>
+          <div class="footer__column">
+            <h4>Resources</h4>
+            <a href="#">Help Center</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Privacy Policy</a>
+          </div>
+          <div class="footer__column">
+            <h4>Connect with us</h4>
+            <div class="footer__social">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2024 All rights reserved.</p>
+      </div>
+    </footer>
   </body>
 </html>

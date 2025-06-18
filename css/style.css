@@ -15,13 +15,16 @@ button{
   padding: 100px;
 }
 .hero__title{
-  color: rgb(97, 255, 76); 
+  color: white;
+  /* -webkit-text-stroke: 1px rgb(21,113,112); */
 }
 .hero__description{
-  color: rgb(0, 0, 0);
+  color: rgb(206,229,238);
+  font-weight: 200;
+  
 }
 .hero__highlight{
-  color: rgb(255, 255, 255);
+  color: rgb(206,44,46);
 }
 
 /* 2 Fonts - Feature Section */
@@ -57,10 +60,11 @@ button{
 .cta__description{
   padding: 15px 0;
   color: #fff5f5;
-  font-size: 1.5rem;
+  font-size: 15px;
 }
 .cta__title{
-  font-size: 1.5rem;
+  font-size: 24px;
+  font-weight: 400;
 }
 .cta__button{
  padding: 10px 20px;
@@ -207,4 +211,187 @@ button{
 }
 .element__button:hover {
   background-color: #36c75a;
+}
+
+/* Putting images onto our web */
+.hero{
+  height: 49vh;
+  background-image: url("images/hero.jpg");
+  background-size: cover;
+  background-color: rgba(0,0,0,0.55);
+  background-blend-mode: overlay;
+  background-position: center;
+  text-align: center;
+  align-content: center;
+}
+
+/* Making Feature as Flex and Adding image side by side */
+.feature{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.feature__container-image{
+  flex-basis: 50%;
+}
+.feature__container{
+  flex-basis:50%;
+}
+.feature__image{
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+}
+.cta__button:hover{
+  background-color: #d0d0d0;
+  cursor: pointer;
+}
+.video__button--primary{
+  color: #40e96a;
+}
+.video__button--primary:hover{
+  background-color: #5bb471;
+  color: white;
+  cursor: pointer;
+}
+.video__button--sec{
+  color: #40e96a;
+}
+.video__button--sec:hover{
+  background-color: #5bb471;
+  color: white;
+  cursor: pointer;
+}
+.video__container{
+  background-image: url("images/video.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  background-color: rgba(0,0,0,0.55);
+  background-blend-mode: overlay;
+}
+.programs__card{
+  display: flex;
+  background: none;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 15px;
+  height: 500px;
+  border-radius: 8px;
+  padding: 0%;
+  flex-basis: 30%;
+  text-align: left;
+}
+.programs__card-img{
+  object-fit: cover;
+  width: 100%;
+  height: 700px;
+  min-height: 200px;
+  border-radius: 8px;
+}
+.element__left--image{
+  background-size: cover;
+  object-fit: cover;
+  width: 100%;
+  height:500px;
+  border-radius: 8px;
+}
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 100px;
+}
+.nav__links{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  text-decoration: none;
+}
+.nav__link {
+  text-decoration: none;
+  color: #333333;
+}
+
+.nav__link:hover {
+  color: #34c759;
+}
+
+.footer {
+  background-color: #eeeeee;
+  padding: 60px 100px 20px;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.footer__logo {
+  flex-basis: 30%;
+}
+
+.footer__logo img {
+  max-width: 150px;
+  margin-bottom: 20px;
+}
+
+.footer__logo p {
+  margin-bottom: 20px;
+  color: #5d5d5d;
+}
+
+.footer__links {
+  display: flex;
+  gap: 60px;
+}
+
+.footer__column h4 {
+  color: #121111;
+  margin-bottom: 20px;
+}
+
+.footer__column a {
+  display: block;
+  color: #5d5d5d;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.footer__column a:hover {
+  color: #34c759;
+}
+
+.footer__social {
+  display: flex;
+  gap: 15px;
+}
+
+.footer__social a {
+  color: #5d5d5d;
+  font-size: 20px;
+}
+
+.footer__social a:hover {
+  color: #34c759;
+}
+
+.footer__bottom {
+  border-top: 1px solid #e0e0e0;
+  padding-top: 20px;
+  text-align: center;
+  color: #5d5d5d;
+}
+
+.footer__button {
+  background-color: #34c759;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.footer__button:hover {
+  background-color: #2db14e;
 }
